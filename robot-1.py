@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-#chmod u+x ~/catkin_ws/src/beginner_tutorials/src/robot0.py
+#chmod u+x ~/catkin_ws/src/beginner_tutorials/src/robot-1.py
 
 import rospy
 from geometry_msgs.msg import Twist
