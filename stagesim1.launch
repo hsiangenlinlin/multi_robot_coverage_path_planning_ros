@@ -1,0 +1,12 @@
+<launch>
+	<param name = "use_sim_time" value="true" />
+	<node pkg="stage_ros" name="stageros" type="stageros" args="$(find beginner_tutorials)/world/worldfile.world" output="screen"/>
+
+	
+	<rosparam file="$(find beginner_tutorials)/config/r.yaml" command="load"/>
+	
+	<node pkg="beginner_tutorials" name="robotmove1" type="robot-1.py" args="0" output="screen"/>
+	<node pkg="beginner_tutorials" name="robotmove2" type="robot-2.py" args="1" output="screen"/>
+
+</launch>
+
